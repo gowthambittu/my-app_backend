@@ -29,7 +29,7 @@ app.post('/send-email', (req, res) => {
   const mailOptions = {
     from: 'webapp@gmail.com',
     to: 'srainfradevelopers9@gmail.com',
-    subject: 'Quert from webApp',
+    subject: 'contact details',
     html: `
       <p>Name: ${name}</p>
       <p>Phone: ${phone}</p>
