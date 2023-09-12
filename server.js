@@ -24,6 +24,7 @@ auth: {
 
 // API endpoint to handle form submissions
 app.post('/send-email', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*');
   const { name, phone, email, message } = req.body;
 
   const mailOptions = {
